@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 4</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<!-- Custom HTML -->
+	<div class="top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<div class="top__statistics">
+						<span class="top__statistics-text">Cryptocurrencies:</span>
+						<span class="top__statistics-value">1614</span>
+					</div>
+				</div>
+				<div class="col">
+					<div class="top__statistics">
+						<span class="top__statistics-text">Markets:</span>
+						<span class="top__statistics-value">10773</span>
+					</div>
+				</div>
+				<div class="col">
+					<div class="top__statistics">
+						<span class="top__statistics-text">Market Cap:</span>
+						<span class="top__statistics-value">$452 398 971 972</span>
+					</div>
+				</div>
+				<div class="col">
+					<div class="top__statistics">
+						<span class="top__statistics-text">24h Vol:</span>
+						<span class="top__statistics-value">$25 829 073 611</span>
+					</div>
+				</div>
+				<div class="col">
+					<div class="top__statistics">
+						<span class="top__statistics-text">BTC Dominance:</span>
+						<span class="top__statistics-value">36.0%</span>
+					</div>
+				</div>
+				<div class="col-2">
+					<select id="language">
+						<option value="hide">Language</option>
+						<option value="english">English</option>
+						<option value="vietnamese">Vietnamese</option>
+						<option value="russian">Russian</option>
+					</select>
+					<select id="currency">
+						<option value="hide">Currency</option>
+						<option value="USD">USD</option>
+						<option value="DKK">DKK</option>
+						<option value="JPY">JPY</option>
+						<option value="JPY">PLN</option>
+						<option value="AUD">AUD</option>
+						<option value="EUR">EUR</option>
+						<option value="KRW">KRW</option>
+						<option value="RUB">RUB</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<div class="panel">
+						<div class="panel__heading">
+							<a href="#!">
+								BTC - USD
+							</a>
+						</div>
+						<div class="panel__info">
+							<span class="panel__info-value">$ 9,553.51</span>
+							<span class="panel__info-percent trend-down">- 2.12%</span>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<h1 class="header__title">Biggest Gainers and Losers</h1>
+				</div>
+				<div class="col">
+					<div class="panel">
+						<div class="panel__heading">
+							<a href="#!">
+								ETH - USD
+							</a>
+						</div>
+						<div class="panel__info">
+							<span class="panel__info-value">$ 776.24</span>
+							<span class="panel__info-percent trend-up">3.31%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<table id="gainers" class="display" width="100%">
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Name</th>
+							<th>Price USD</th>
+							<th>24hr price change</th>
+							<th>30 Day Price Change</th>
+							<th>Current Market Cap</th>
+							<th>24 Vol</th>
+							<th>Supply % Issued</th>
+							<th>GitHub stars</th>
+							<th>GitHub Lines Added Last 90 Days</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="screen">
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col">
+					<div class="screen__wrapper">
+						<h2 class="screen__title">Create your own finance screener!</h2>
+						<button class="button button-create button-large">Create new screener</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<table id="losers" class="display" width="100%">
+					<thead>
+						<tr>
+							<th>Rank</th>
+							<th>Name</th>
+							<th>Price USD</th>
+							<th>24hr price change</th>
+							<th>30 Day Price Change</th>
+							<th>Current Market Cap</th>
+							<th>24 Vol</th>
+							<th>Supply % Issued</th>
+							<th>GitHub stars</th>
+							<th>GitHub Lines Added Last 90 Days</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<ul class="footer__list">
+						<li class="footer__list-item">
+							<a href="#!" class="footer__list-link">
+								Help
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#!" class="footer__list-link">
+								Privacy
+							</a>
+						</li>
+						<li class="footer__list-item">
+							<a href="#!" class="footer__list-link">
+								Terms
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

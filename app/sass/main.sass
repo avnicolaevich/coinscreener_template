@@ -1,0 +1,217 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	color: #333
+	overflow-x: hidden
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+h1, h2
+	margin: 0
+	padding: 0
+
+.button
+	display: inline-block
+	font-weight: 400
+	text-align: center
+	text-transform: uppercase
+	white-space: nowrap
+	vertical-align: middle
+	user-select: none
+	border: 1px solid transparent
+	padding: .375rem .75rem
+	font-size: 1rem
+	line-height: 1.5
+	border-radius: .25rem
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+	cursor: pointer
+.button-create
+	color: #fff
+	background-color: #007bff
+	border-color: #007bff
+	&:hover
+		color: #fff
+		background-color: #0069d9
+		border-color: #0062cc
+	&:active
+		color: #fff
+		background-color: #0062cc
+		border-color: #005cbf
+	&:focus
+		outline: none
+		box-shadow: 0 0 0 0.2rem rgba(0,123,255,.5)
+.button-large
+	padding: .5rem 1rem
+	font-size: 1.25rem
+	line-height: 1.5
+	border-radius: .3rem
+
+// Top styles
+.top
+	background-color: $top-background
+	height: $top-height
+	&__statistics
+		&-text
+			display: flex
+			justify-content: center
+			color: $top-text-color
+		&-value
+			display: flex
+			justify-content: center
+			color: $top-value-color
+.header
+	margin: 10px 0
+	&__title
+		text-align: center
+table
+	text-align: center
+.screen
+	margin: 15px 0
+	text-align: center
+	&__wrapper
+		padding: 10px 20px
+		border: 1px solid #dee2e5
+		border-radius: 3px
+		background-color: #f5f5f7
+.panel
+	background-color: #fff
+	border: 1px solid #E0E6EF
+	border-radius: 4px
+	box-shadow: 0 1px 1px rgba(0,0,0,.05)
+	&__heading
+		line-height: 30px
+		font-weight: bold
+		text-align: center
+		background-color: #595959
+		border-bottom: 1px solid transparent
+		border-top-left-radius: 3px
+		border-top-right-radius: 3px
+		a
+			color: #ADE1D8
+			&:hover
+				text-decoration: none
+	&__info
+		display: flex
+		justify-content: space-around
+		background-color: #fff
+		line-height: 30px
+		&-value
+			font-weight: bold
+			color: #121212
+		&-percent.trend-down
+			color: #A11B0A
+		&-percent.trend-up
+			color: #1d8b3a
+.select-hidden
+	display: none
+	visibility: hidden
+	padding-right: 10px
+.select
+	cursor: pointer
+	display: inline-block
+	position: relative
+	color: $select-color
+	width: $select-width
+	height: $select-height
+.select-styled
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background-color: $select-background
+	padding: 11px 15px
+	transition: all 0.2s ease-in
+	&:after
+		content: ""
+		width: 0
+		height: 0
+		border: 7px solid transparent
+		border-color: $select-color transparent transparent transparent
+		position: absolute
+		top: 16px
+		right: 10px
+	&:hover
+		background-color: lighten($select-background, 2)
+	&:active, &.active
+		background-color: lighten($select-background, 5)
+	&:after
+		top: 14px
+		border-color: transparent transparent $select-choose-color transparent
+.select-options
+	display: none
+	position: absolute
+	top: 100%
+	right: 0
+	left: 0
+	z-index: 999
+	margin: 0
+	padding: 0
+	list-style: none
+	background-color: lighten($select-background, 5)
+	li
+		margin: 0
+		padding: 12px 0
+		text-indent: 15px
+		border-top: 1px solid lighten($select-background, 10)
+		transition: all 0.15s ease-in
+		&:hover
+		  	color: $select-color
+		  	background: lighten($select-background, 10)
+		&[rel="hide"]
+		  	display: none
+// Top styles end
+
+.footer
+	margin-top: 20px
+	background-color: $top-background
+	&__list
+		list-style: none
+		margin: 0
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		&-item
+			display: flex
+			padding: 5px
+		&-link
+			color: #fff
+			transition: all .5s ease-in
+			&:hover
+				color: #5DBE3F
+				text-decoration: none
+
+@import "media" // Always at the end
